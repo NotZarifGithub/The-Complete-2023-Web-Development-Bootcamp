@@ -79,4 +79,3 @@
 39.Build a useful Wordpress Widget plugin (Youtube)
 
 40.Build a portfolio of 3-5 decent sites//projects from Brad's tutorials. Tweak them to prove you can and share the link in the next step.
-
