@@ -10,12 +10,12 @@
 
 body {
     font-family: 'Phudu', cursive;
+    background-color:whitesmoke;
 }
 
 .container {
     max-width: 1400px;
-    margin: 0 auto
-    ;
+    margin: 0 auto;
 }
 
 .navbar {
@@ -45,6 +45,14 @@ body {
     color: black;
     font-size: large;
     font-weight: 700;
+    transition: 0.2s;
+}
+
+.navbar .container a:hover {
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    border: 10px solid black;
 }
 
 .header .container {
@@ -66,7 +74,7 @@ body {
     line-height: 20px;
 }
 
-.header .container a {
+.button {
     display: inline-block;
     font-size: 1em;
     background-color: black;
@@ -74,6 +82,13 @@ body {
     padding: 10px 30px;
     text-decoration: none;
     width: 60px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    font-size: x-large;
+    border: 10px solid black;
+    width: 85px;
 }
 
 /* button undone */
@@ -89,3 +104,4 @@ body {
     text-decoration: none;
     color: black;
 }
+
