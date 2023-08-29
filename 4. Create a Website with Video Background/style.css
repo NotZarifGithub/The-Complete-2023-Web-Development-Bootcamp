@@ -1,170 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/twitter.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
-    font-family: 'Space Mono', monospace;
- }
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 40px 100px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header .logo {
-  color: #fff;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.toggle {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-}
-.toggle.active {
-    background: url(https://i.ibb.co/rt3HybH/close.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-    cursor: pointer;
-}
-.showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    transition: 0.5s;
-    z-index: 2;
-}
-.showcase.active {
-    right: 300px;
 }
 
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
+body {
+    font-family: 'Phudu', cursive;
 }
 
-.text {
-    position: relative;
-    z-index: 10;
+.container {
+    max-width: 1400px;
+    margin: 0 auto
+    ;
 }
 
-.text h2 {
-    font-size: 5em;
-    font-weight: 800;
-    color: #fff;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-.text h3 {
-    font-size: 4em;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-.text p {
-    font-size: 1.1em;
-    color: #fff;
+.navbar {
     margin: 20px 0;
-    font-weight: 400;
-    max-width: 700px;
 }
-.text a {
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container ul {
+    display: flex;
+    width:300px ;
+    margin-right: 10px;
+    justify-content: space-between;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navbar .container h2 {
+    font-size:xx-large;
+}
+
+.navbar .container a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 700;
+}
+
+.header .container {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .container h1,h2 {
+    font-size: 4em;
+    line-height: 50px;
+}
+
+.header .container p{
+    max-width: 600px;
+    font-size: 1em;
+    padding: 30px 0;
+    line-height: 20px;
+}
+
+.header .container a {
     display: inline-block;
     font-size: 1em;
-    background: #fff;
+    background-color: black;
+    color: white;
     padding: 10px 30px;
-    text-transform: uppercase;
     text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    color: #111;
-    letter-spacing: 2px;
-    transition: 0.2s;
-}
-.text a:hover {
-    letter-spacing: 6px;
-}
-.social {
-    position: absolute;
-    z-index: 10;
-    bottom: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social li {
-    list-style: none;
-}
-.social li a {
-    display: inline-block;
-    margin-right: 20px;
-    filter: invert(1);
-    transform: scale(0.5);
-    transition: 0.5s;
-}
-.social li a:hover {
-    transform: scale(0.5) translateY(-15px);
-}
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu ul {
-    position: relative;
-}
-.menu ul li {
-    list-style: none;
-}
-.menu ul li a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #111;
-}
-.menu ul li a:hover {
-    color: #03a9f4;
+    width: 60px;
 }
 
-@media (max-width: 991px) {
-    .showcase,
-    .showcase header {
-        padding: 40px;
-    }
-    .text h2 {
-        font-size: 3em;
-    }
-    .text h3 {
-        font-size: 2em;
-    }
+/* button undone */
+
+.social .container ul {
+    display: flex;
+    list-style-type: none;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.social .container a {
+    text-decoration: none;
+    color: black;
 }
