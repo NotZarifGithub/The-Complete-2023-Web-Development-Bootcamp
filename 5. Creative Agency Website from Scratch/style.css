@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: 'Phudu', cursive;
+    color: black;
+    max-width: 1500px;
+    margin: 0  auto;
+}
+
+/* NAVIGATION */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    
+}
+
+.container .title {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.container .hamburger ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 400px;
+}
+
+.container .hamburger a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.container .hamburger a:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 10px;    
+}
+/* HOMEPAGE */
+
+section {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    margin: 20px auto;
+}
+
+.homepage a {
+    text-decoration: none;
+    color: white;
+}
+
+.homepage {
+    position: relative;
+    padding-left: 30px;
+    max-width: 600px;
+}
+
+.home-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width:1068px) {
+    .home-image {
+        display: none;
+    }
+
+    body {
+        min-width: 590px;
+    }
+}
