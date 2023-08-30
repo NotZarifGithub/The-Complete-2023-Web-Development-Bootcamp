@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    opacity: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    word-spacing: -10px;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color:rgba(196, 39, 39, 0) ;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homepage {
+    position: absolute;
+    margin-bottom: 90px;
+    color: rgba(0, 0, 0, 0.61);
+}
