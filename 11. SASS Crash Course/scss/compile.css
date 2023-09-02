@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+body ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navbar {
+  background-color: rgb(74, 74, 201);
+  color: white;
+  padding: 15px 0;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.navbar a:hover {
+  color: rgb(240, 145, 56);
+}
+
+.showcase {
+  background-color: rgb(74, 74, 201);
+  color: white;
+}
+.showcase h1 {
+  margin: 10px 0;
+  font-size: 40px;
+}
+.showcase p {
+  font-weight: 300;
+  margin: 20px 0;
+}
+.showcase img {
+  width: 450px;
+  height: 450px;
+}
+.showcase .style-1 {
+  background-color: #7171d5;
+  color: white;
+  margin: 5px;
+}
+.showcase .style-1:hover {
+  transform: scale(0.95);
+}
+.showcase .style-2 {
+  background-color: rgb(240, 145, 56);
+  color: white;
+  margin: 5px;
+}
+.showcase .style-2:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=compile.css.map */
